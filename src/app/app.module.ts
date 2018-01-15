@@ -3,21 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NbLayoutModule, NbSidebarModule, NbSidebarService, NbThemeModule } from '@nebular/theme';
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DashboardComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([{ path: '', component: DashboardComponent}]),
+    RouterModule.forRoot([]),
     NbThemeModule.forRoot({ name: 'default' }),
-    NbLayoutModule,
-    NbSidebarModule
+    DashboardModule
   ],
   providers: [NbSidebarService],
   bootstrap: [AppComponent]
