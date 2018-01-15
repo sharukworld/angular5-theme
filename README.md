@@ -1,4 +1,4 @@
-# Io.Neurai.Platform.Webapp.Ui
+# Sample Web Theme Web UI
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
 
